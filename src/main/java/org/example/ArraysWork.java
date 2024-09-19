@@ -8,7 +8,7 @@ public class ArraysWork {
     static Random random = new Random();
 
     @Contract("_ -> param1")
-    public static int[] fillRandomNum(int[] val){
+   public static int[] fillRandomNum(int[] val){
         for (int i = 0; i < val.length; i++) {
             val[i] = randInt(-10, 10);
         }
@@ -18,14 +18,13 @@ public class ArraysWork {
         return random.nextInt(max + 1 - min) + min;
     }
     public static int minValue(int[] val){
-        int min = 0;
+        int min = val[0];
         for (int t : val) {
             if (t < min) min = t;
         }
         return min;
     }
     public static int[] createArray(int n){
-        int[] t = new int[n];
-        return t;
+        return new int[n];
     }
 }

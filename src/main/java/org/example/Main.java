@@ -3,6 +3,7 @@ package org.example;
 import java.util.Arrays;
 
 import static java.lang.System.*;
+import static org.example.ArraysWork.fillRandomNum;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class Main {
         int[] myArray = ArraysWork.createArray(50);
 
         //Filling th array by random numbers
-        ArraysWork.fillRandomNum(myArray);
+        fillRandomNum(myArray);
         out.println(Arrays.toString(myArray));
 
         //Finding of the minimal value into array
