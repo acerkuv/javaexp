@@ -6,6 +6,7 @@ import java.util.Random;
 
 public class ArraysWork {
     static Random random = new Random();
+
     @Contract("_ -> param1")
     public static int[] fillRandomNum(int[] val){
         for (int i = 0; i < val.length; i++) {
@@ -22,5 +23,9 @@ public class ArraysWork {
             if (t < min) min = t;
         }
         return min;
+    }
+    public static int[] createArray(int n){
+        int[] t = new int[n];
+        return t;
     }
 }
