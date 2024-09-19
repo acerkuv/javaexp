@@ -6,7 +6,6 @@ import static java.lang.System.*;
 
 public class Main {
     public static void main(String[] args) {
-        @SuppressWarnings("InstantiationOfUtilityClass") ArraysWork m = new ArraysWork();
 
         //Create an integer array len n
         int[] myArray = ArraysWork.createArray(50);
